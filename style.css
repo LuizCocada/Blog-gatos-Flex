@@ -11,6 +11,7 @@
     --color-base-100:#ffffff33;;
 }
 
+
 body,input{
     font-size: 1.6rem;
     font-family: 'Mulish', sans-serif;
@@ -23,10 +24,11 @@ body,input{
 header{
     display: flex;
     padding: 1.2rem 2.8rem;
-    background-color: var(--brand-colors-explorer-dark);
-    justify-content: center;
+    background: #065E7C;
     gap: 2.5rem;
     align-items: stretch;
+    max-width: 100%;
+    justify-content: center;
 }
 
 .img-logo img{
@@ -34,7 +36,6 @@ header{
     height: 4.2rem;
     padding: .8rem;
     background-color: #FFF;
-
     border-radius: 50%;
 }
 
@@ -51,6 +52,7 @@ form input{
     border-style: none;
     background: rgba(255, 255, 255, 0.20);
     color: #FFF;
+    max-width: 1440px;
 }
 
 form input::placeholder{
@@ -141,7 +143,7 @@ section .related-content{
 }
 
 .item img{
-    width: 100%;
+    width: 15.2rem;
     object-fit: cover;
     transition: all 200ms ease-out;
     display: block;
@@ -195,24 +197,24 @@ header{
     }
 }
 
-@media (min-width:1270px){
+@media (min-width:1100px){
 
     main{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 550px;
     }
 
     main .main-content{
         max-width: 80rem;
         margin-top: 4.4rem;
-        padding: 0;
+        padding-left: 5rem;
     }
     .img-main img{
         width: 100%;
-       
     }
 
     main .related{
-        margin-top: 3.4rem;
+        margin-top: 3rem;
         padding: 0;
     }
 
@@ -242,8 +244,6 @@ header{
 }
 
    
-
-
 
 
 
